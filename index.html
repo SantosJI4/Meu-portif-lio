@@ -1,5 +1,276 @@
-<html>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iury — Portfólio</title>
+    <meta name="description" content="Portfólio profissional de Iury — Desenvolvedor com foco em Front-end (React, CSS Avançado, TypeScript) e Back-end (SQL, PostgreSQL, Python). Estudante na EBAC." />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Iury — Portfólio" />
+    <meta property="og:description" content="Front-end: React, CSS Avançado, TypeScript. Back-end: SQL, PostgreSQL, Python. Estudante na EBAC." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="./" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/00000000?v=4" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Iury — Portfólio" />
+    <meta name="twitter:description" content="Front-end: React, CSS Avançado, TypeScript. Back-end: SQL, PostgreSQL, Python. Estudante na EBAC." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Iury",
+        "jobTitle": "Desenvolvedor Front-end e Back-end",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "EBAC"
+        },
+        "knowsAbout": [
+          "React",
+          "CSS Avançado",
+          "TypeScript",
+          "SQL",
+          "PostgreSQL",
+          "Python",
+          "GitHub"
+        ]
+      }
+    </script>
+  </head>
   <body>
-    <h1>a</h1>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" id="topo">
+      <nav class="nav container" aria-label="Principal">
+        <a class="brand" href="#topo" aria-label="Página inicial">
+          <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span> Iury
+        </a>
+
+        <button class="nav-toggle" aria-label="Alternar menu" aria-expanded="false">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-list" role="list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li>
+            <button id="themeToggle" class="btn btn-ghost" aria-label="Alternar tema">Tema</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <!-- Hero -->
+      <section class="hero section">
+        <div class="container grid-2">
+          <div class="hero-copy">
+            <p class="eyebrow">Olá, prazer! 👋</p>
+            <h1>Eu sou <span class="highlight">Iury</span></h1>
+            <p class="lead">
+              Atualmente estou investindo em mim mesmo: estudando e cursando na <strong>EBAC</strong>.
+              Tenho experiência em <strong>Front-end</strong> — React, CSS Avançado, TypeScript —
+              e <strong>Back-end</strong> — SQL, PostgreSQL, Python. GitHub e muito mais.
+            </p>
+            <div class="actions">
+              <a class="btn btn-primary" href="#contato">Vamos conversar</a>
+              <a class="btn btn-outline" href="#projetos">Ver projetos</a>
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="avatar" aria-hidden="true">IY</div>
+            <ul class="stack-tags" role="list" aria-label="Tecnologias">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>CSS</li>
+              <li>SQL</li>
+              <li>PostgreSQL</li>
+              <li>Python</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre -->
+      <section id="sobre" class="section">
+        <div class="container">
+          <h2>Sobre mim</h2>
+          <p>
+            Sou desenvolvedor com foco em entregar interfaces caprichadas e soluções sólidas de back‑end.
+            Gosto de código limpo, acessibilidade e performance. Estou sempre estudando e evoluindo —
+            atualmente cursando na <strong>EBAC</strong> para aprofundar fundamentos e melhores práticas.
+          </p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section alt">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <article class="card">
+              <h3>Front‑end</h3>
+              <ul class="tags" role="list">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>CSS Avançado (Flex, Grid, Animations)</li>
+                <li>HTML Semântico</li>
+                <li>Responsividade & A11y</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Back‑end</h3>
+              <ul class="tags" role="list">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>PostgreSQL</li>
+                <li>APIs REST</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Ferramentas</h3>
+              <ul class="tags" role="list">
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Figma (básico)</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projetos -->
+      <section id="projetos" class="section">
+        <div class="container">
+          <h2>Projetos em destaque</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-header">
+                <h3>Portfolio Responsivo</h3>
+                <span class="badge">Front‑end</span>
+              </div>
+              <p>Site responsivo com HTML semântico, CSS moderno e modo escuro, focado em acessibilidade e performance.</p>
+              <div class="project-actions">
+                <a class="btn btn-sm" href="#" aria-label="Ver site do projeto Portfolio">Live</a>
+                <a class="btn btn-sm btn-outline" href="https://github.com/SantosJI4" target="_blank" rel="noopener">Código</a>
+              </div>
+              <ul class="mini-tags" role="list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>A11y</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <div class="project-header">
+                <h3>API com Python</h3>
+                <span class="badge">Back‑end</span>
+              </div>
+              <p>Protótipo de API REST com boas práticas, autenticação básica e documentação.</p>
+              <div class="project-actions">
+                <a class="btn btn-sm disabled" href="#" aria-disabled="true">Em breve</a>
+                <a class="btn btn-sm btn-outline" href="https://github.com/SantosJI4" target="_blank" rel="noopener">Código</a>
+              </div>
+              <ul class="mini-tags" role="list">
+                <li>Python</li>
+                <li>REST</li>
+                <li>OpenAPI</li>
+              </ul>
+            </article>
+            <article class="project-card">
+              <div class="project-header">
+                <h3>Dashboard com SQL</h3>
+                <span class="badge">Data</span>
+              </div>
+              <p>Consultas em PostgreSQL com visualizações simples para métricas de negócio.</p>
+              <div class="project-actions">
+                <a class="btn btn-sm disabled" href="#" aria-disabled="true">Em breve</a>
+                <a class="btn btn-sm btn-outline" href="https://github.com/SantosJI4" target="_blank" rel="noopener">Código</a>
+              </div>
+              <ul class="mini-tags" role="list">
+                <li>SQL</li>
+                <li>PostgreSQL</li>
+                <li>Visualização</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formação e Experiência -->
+      <section id="formacao" class="section alt">
+        <div class="container">
+          <h2>Formação & Experiência</h2>
+          <ul class="timeline" role="list">
+            <li>
+              <div class="time">Cursando</div>
+              <div class="content">
+                <h3>EBAC — Desenvolvimento</h3>
+                <p>Formação focada em fundamentos sólidos, melhores práticas e projetos práticos.</p>
+              </div>
+            </li>
+            <li>
+              <div class="time">Atual</div>
+              <div class="content">
+                <h3>Projetos pessoais</h3>
+                <p>Explorando React no front‑end e Python/SQL no back‑end, com versionamento no GitHub.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="section">
+        <div class="container">
+          <h2>Vamos conversar</h2>
+          <p>Curtiu o que viu? Fique à vontade para me chamar.</p>
+          <div class="contact-cards">
+            <a class="contact-card" href="mailto:contato@exemplo.com" aria-label="Enviar e-mail">
+              <span class="icon" aria-hidden="true">✉️</span>
+              <span>
+                <strong>E‑mail</strong>
+                <small>contato@exemplo.com</small>
+              </span>
+            </a>
+            <a class="contact-card" href="https://github.com/SantosJI4" target="_blank" rel="noopener" aria-label="Abrir GitHub">
+              <span class="icon" aria-hidden="true">🐙</span>
+              <span>
+                <strong>GitHub</strong>
+                <small>@SantosJI4</small>
+              </span>
+            </a>
+            <a class="contact-card" href="#" aria-label="Abrir LinkedIn">
+              <span class="icon" aria-hidden="true">💼</span>
+              <span>
+                <strong>LinkedIn</strong>
+                <small>Adicionar link</small>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Iury. Feito com cuidado, acessibilidade e amor por código.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
   </body>
-</html>
+  </html>
